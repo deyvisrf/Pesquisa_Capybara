@@ -1,5 +1,6 @@
 # language:pt
 
+@pesquisa
 Funcionalidade: Pesquisa
     realizar uma pesquisa aleatoria no google
 
