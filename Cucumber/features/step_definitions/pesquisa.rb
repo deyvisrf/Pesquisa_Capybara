@@ -2,13 +2,16 @@
 
 Dado(/^que realize uma pesquisa no google$/) do
   visit 'https://www.google.com.br/'
-  fill_in 'q', with: Faker::Name.name
-  
+
+  fill_in 'q', with: 'Dextra'
+  click_button 'Pesquisa Google'
+
+  click_link 'Dextra: Desenvolvimento de software sob medida'
+
 end
 
 Então(/^me retornará um resusltado com sucesso$/) do
-   puts page.all(:css, 'resultStats')
-    
+  expect(page).to have_content "dextra"
  end
 
 #  find('.resultStats', text: 'louie.torp@haag.com')
