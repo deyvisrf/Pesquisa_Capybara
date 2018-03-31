@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Installing dependencies') {
       steps {
-        sh '''gem install bundler
+        sh '''sudo gem install bundler
 cd cucumber
 bundle install'''
       }
