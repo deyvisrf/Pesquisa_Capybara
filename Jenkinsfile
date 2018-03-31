@@ -6,10 +6,10 @@ pipeline {
         git(url: 'https://github.com/deyvisrf/Pesquisa_Capybara.git', branch: 'master')
       }
     }
-    stage('') {
+    stage('error') {
       steps {
         sh '''cd cucumber
-bundle install'''
+ls'''
       }
     }
   }
